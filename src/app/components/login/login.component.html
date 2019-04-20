@@ -1,0 +1,13 @@
+<html>
+<body>
+  <div class="box">
+    <h1>Login</h1>
+
+    <input [value]="username" (input)="username = $event.target.value" class="email">
+
+    <input [value]="password" (input)="password = $event.target.value" class="password">
+
+    <div class="btn" (click)="login()">Sign In</div>
+  </div>
+</body>
+</html>
