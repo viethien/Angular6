@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app.routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { metaReducers , reducers } from './reducers/store';
@@ -11,6 +11,7 @@ import { environment } from '../environments/environment.prod';
 import { CoursesComponent } from './components/courses/courses.component';
 import { TableModule } from 'primeng/table';
 import { RoutingComponent } from './app.routing.module';
+import { LogoutComponent } from './components/logout/logout.component';
 
 @NgModule ( {
   imports :[
@@ -24,6 +25,7 @@ import { RoutingComponent } from './app.routing.module';
     AppComponent ,
     LoginComponent ,
     CoursesComponent,
+    LogoutComponent,
     RoutingComponent
   ] ,
   providers :[] ,
